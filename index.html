@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🌡️ Termometro de opinión</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1 style="color: red; font-family: fantasy; display: flex; align-items: center; justify-content: center;"> 🌡️ TERMOMETRO DE OPINIÓN</h1>
+
+    <form id="formulario">
+        <div class="nombre">
+                Nombre completo: <input id="nombre" type="text" placeholder="Escriba su nombre" required>
+        </div>
+   
+
+        <div class="pregunta">
+            <h3>1. ¿Qué tanto uso la IA?</h3>
+
+            <label><input type="radio" name="p1" value="1" required> Nunca</label>
+            <label><input type="radio" name="p1" value="2"> Casi Nunca</label>
+            <label><input type="radio" name="p1" value="3"> Algunas veces</label>
+            <label><input type="radio" name="p1" value="4"> Casi Siempre</label>
+            <label><input type="radio" name="p1" value="5"> Siempre</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>2. ¿Para hacer tareas que tan frecuente uso la IA?</h3>
+
+            <label><input type="radio" name="p2" value="1" required> Nunca</label>
+            <label><input type="radio" name="p2" value="2"> Casi Nunca</label>
+            <label><input type="radio" name="p2" value="3"> Algunas veces</label>
+            <label><input type="radio" name="p2" value="4"> Casi Siempre</label>
+            <label><input type="radio" name="p2" value="5"> Siempre</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>3. ¿Confio más en la IA que en los resultados de otras busquedas incluyendo libros?</h3>
+
+            <label><input type="radio" name="p3" value="1" required> Nunca</label>
+            <label><input type="radio" name="p3" value="2"> Casi Nunca</label>
+            <label><input type="radio" name="p3" value="3"> Algunas veces</label>
+            <label><input type="radio" name="p3" value="4"> Casi Siempre</label>
+            <label><input type="radio" name="p3" value="5"> Siempre</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>4. ¿Qué tan probable es que edite fotos con IA?</h3>
+
+            <label><input type="radio" name="p4" value="1" required> Nunca</label>
+            <label><input type="radio" name="p4" value="2"> Casi Nunca</label>
+            <label><input type="radio" name="p4" value="3"> Algunas veces</label>
+            <label><input type="radio" name="p4" value="4"> Casi Siempre</label>
+            <label><input type="radio" name="p4" value="5"> Siempre</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>5. ¿Cuando no entiende un tema que tan probable es que busque en la IA?</h3>
+
+            <label><input type="radio" name="p5" value="1" required> Nunca</label>
+            <label><input type="radio" name="p5" value="2"> Casi Nunca</label>
+            <label><input type="radio" name="p5" value="3"> Algunas veces</label>
+            <label><input type="radio" name="p5" value="4"> Casi Siempre</label>
+            <label><input type="radio" name="p5" value="5"> Siempre</label>
+        </div>
+
+        <button type="submit">
+            Ver Resultado
+        </button>
+
+    </form>
+
+    <div class="resultado" id="resultado" hidden aria-live="polite">
+
+        <div class="termometro">
+
+            <img src="img/termometro.png">
+            <span id="flecha" aria-hidden="true">➜</span>
+        </div>
+
+        <div class="detalle-resultado">
+            <h2 id="nombre-resultado"></h2>
+            <h2 id="puntaje"></h2>
+
+            <h3 id="mensaje"></h3>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="interactivo.js"></script>
+
+</body>
+</html>
